@@ -1,6 +1,7 @@
 import {sequelize} from '../connection.js'
 import { DataTypes } from 'sequelize';
 import payment from './payment.model.js'
+import role from './role.js';
 
  const Student= sequelize.define('Student',{
     id : {
@@ -32,5 +33,5 @@ import payment from './payment.model.js'
         allowNull:false
     }
 })
-Student.hasMany(payment);
+Student.hasMany(role);
 export default Student

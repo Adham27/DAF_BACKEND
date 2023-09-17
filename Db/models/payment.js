@@ -12,10 +12,6 @@ import { DataTypes } from 'sequelize';
         type :DataTypes.STRING,
         allowNull:false,
     },
-    payment_way :  {
-        type: DataTypes.STRING,
-        allowNull:false
-    },
     date:{
         type:DataTypes.DATE,
         allowNull:false
